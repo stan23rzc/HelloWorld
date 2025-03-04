@@ -20,12 +20,12 @@ WORKDIR /app
 
 # Change the main branch where the project sources are located
 
-RUN git checkout main || git checkout master
+RUN git checkout main || git checkout main
 
 
 #Download the latest changes from the repository in the indicated branch
 
-RUN git pull origin master
+RUN git pull origin main
 
 # Run the construction process with Maven
 
